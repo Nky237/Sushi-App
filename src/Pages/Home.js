@@ -8,6 +8,7 @@ import Button from '../components/Button'
 import SignUp from './SignUp'
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
@@ -26,8 +27,8 @@ const Home = () => {
         can see beautiful photos of your food
         </p>
         <div className='btn d-flex justify-content-center'>
-          <Button  text='MENU'/>
-          <Button  text={'CART'}/>
+         <Link to='/login'><Button  text='LOGIN'/></Link>
+         <Link to='/sign'><Button text={'SIGNUP'}/></Link> 
         </div>
     </div>
         </Carousel.Caption>
@@ -44,8 +45,8 @@ const Home = () => {
         can see beautiful photos of your food
         </p>
         <div className='btn d-flex justify-content-center'>
-          <Button  text='MENU'/>
-          <Button  text={'CART'}/>
+        <Link to='/login'><Button  text='LOGIN'/></Link>
+         <Link to='/sign'><Button text={'SIGNUP'}/></Link> 
         </div>
     </div>
         </Carousel.Caption>
@@ -62,8 +63,8 @@ const Home = () => {
         can see beautiful photos of your food
         </p>
         <div className='btn d-flex justify-content-center'>
-          <Button  text='MENU'/>
-          <Button  text={'CART'}/>
+        <Link to='/login'><Button  text='LOGIN'/></Link>
+         <Link to='/sign'><Button text={'SIGNUP'}/></Link> 
         </div>
     </div>
         </Carousel.Caption>
@@ -80,8 +81,8 @@ const Home = () => {
         can see beautiful photos of your food
         </p>
         <div className='btn d-flex justify-content-center'>
-          <Button  text='MENU'/>
-          <Button  text={'CART'}/>
+        <Link to='/login'><Button  text='LOGIN'/></Link>
+         <Link to='/sign'><Button text={'SIGNUP'}/></Link> 
         </div>
     </div>
         </Carousel.Caption>
