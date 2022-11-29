@@ -33,7 +33,7 @@ const loadLess = ()=>{
         <div style={{'width': '85%'}}>
         <h1 className='text-center'>SUSHI FOOD</h1>
         <div className='d-flex flex-column'>
-        <div className='d-flex flex-wrap mx-5 justify-content-end' style={{'width': '75%'}}> 
+        <div className='d-flex flex-wrap mx-5 justify-content-end' style={{'width': '80%'}}> 
         {
           data && slice?.map((item, index) =>(
                 <div className='m-3 p-3 card mb-4' style={{'width': '20%'}} > 
