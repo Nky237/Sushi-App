@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 
 const SignUp = () => {
   const [passwordShown, setPasswordShown] = useState(false);
+  // const [icon, setIcon] = useState(false);
   const togglePassword = () => {
     // When the handler is invoked
     // inverse the boolean state of passwordShown
@@ -27,10 +28,11 @@ const SignUp = () => {
           </div>
           <div >
             <input type={passwordShown?"text": "password"} placeholder='Enter your password' />
-            <AiOutlineEyeInvisible className='  mt-4' 
+           <label className='mt-4' 
             style={{'marginLeft': '-37px', 'marginBottom':'30px', 'fontSize': '20px'}}
-            onClick={togglePassword}
-            />
+            onClick={togglePassword}>
+              {passwordShown?<AiOutlineEyeInvisible />:<AiOutlineEye /> }
+            </label>
           </div>
           <div>
             <button>SIGN UP</button>
