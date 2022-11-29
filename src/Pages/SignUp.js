@@ -38,7 +38,7 @@ const SignUp = () => {
             <button>SIGN UP</button>
           </div>
           <div className='text-center'>
-            <p>Already have an account. <Link to='login'>LOGIN</Link></p>
+            <p>Already have an account. <Link to='/login'>LOGIN</Link></p>
           </div>
       </form>
           </div> 
