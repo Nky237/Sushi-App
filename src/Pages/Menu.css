@@ -26,3 +26,43 @@ button{
 .pink img{
     margin: 10px 30px;
 }
+.card{
+    width: 20%;
+}
+.buckle{
+margin: 70px auto;
+width: 300px;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        overflow-x: hidden !important;
+        background-color: #E5E5E5 !important;
+    }
+ .bar{
+    width: 20%;
+    margin-top: 250px;
+ }   
+ .card{
+    width: 60%;
+ 
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.buckle {
+    display: flex;
+    width: 300px;
+    margin: 70px 0;
+
+}
+.buckle button{
+    width: 60%;
+}
+.cont{
+    display: flex;
+}
+
+}

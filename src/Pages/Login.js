@@ -4,8 +4,12 @@ import chef1 from '../asset/chef1.jfif'
 import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai';
 import { ToastContainer, toast } from 'react-toastify';
 import { Link } from 'react-router-dom'
+import Modal from '../components/Modal';
 
 const Login = () => {
+
+  // MODAL
+  const[modalOpen, setModalOpen] = useState(false)
   // TOGGLING PASSWORD VISIBILITY
   const [passwordShown, setPasswordShown] = useState(false);
   const togglePassword = () => {
@@ -30,10 +34,11 @@ const HandleSub = (e) =>{
     let user = JSON.parse(sessionStorage.getItem('user'))
     
     if(loginData?.email === user.email && loginData.password === user.password){
-      toast.success('sucessfully logged in')
-      setInterval(()=>{
-        window.location = './menu'
-    },1500)
+      // toast.success('sucessfully logged in')
+      setModalOpen(true)
+    //   setInterval(()=>{
+    //     window.location = './menu'
+    // },1500)
     }
     else{
       toast.error('wrong email or password')
@@ -68,6 +73,7 @@ const HandleSub = (e) =>{
           </div>
       </form>
           </div> 
+          {modalOpen && <Modal setOpenModal={setModalOpen} />}
     </div>
   )
 }
