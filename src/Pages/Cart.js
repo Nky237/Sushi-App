@@ -33,7 +33,7 @@ const Cart = ({data}) => {
       <h1>{`WELCOME ${user?.name}`}</h1>
       <div className='d-flex all'>
       <div className='bar d-flex flex-column'>
-          <img src={logo1} alt='' /> 
+         <Link to='/menu'><img src={logo1} alt='' /></Link>  
           <img src={logo7} alt='' /> 
           <div className='w-100 pink' style={{'backgroundColor': '#F1D5BB', 'height':'50px'}}>
           <img src={logo3}  alt='' /> 

@@ -19,11 +19,11 @@ const loadLess = ()=>{
 }
   const slice = data.slice(0, noOfElement);
   return (
-    <div className='d-flex cont pt-5' style={{'backgroundColor': '#E5E5E5'}}>
+    <div className='d-flex pt-5 house' style={{'backgroundColor': '#E5E5E5'}}>
         <div className='bar d-flex flex-column'>
           <img src={logo1} alt='' /> 
           <img src={logo7} alt='' /> 
-          <div className='w-100 pink' style={{'backgroundColor': '#F1D5BB', 'height':'50px'}}>
+          <div className='w-100 pink' style={{'backgroundColor': '#F1D5BB', 'min-height':'50px'}}>
           <img src={logo3}  alt='' /> 
           </div>
           <Link to='/cart'> <img src={logo4} alt=''/> </Link> 
@@ -33,7 +33,7 @@ const loadLess = ()=>{
         <div style={{'width': '85%'}}>
         <h1 className='text-center'>SUSHI FOOD</h1>
         <div className='d-flex flex-column'>
-        <div className='d-flex flex-wrap mx-5 justify-content-end col' style={{'width': '80%'}}> 
+        <div className='d-flex flex-wrap justify-content-end col' style={{'width': '80%'}}> 
         {
           data && slice?.map((item, index) =>(
                 <div className='m-3 p-3 card mb-4' > 

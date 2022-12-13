@@ -18,6 +18,9 @@
     width: 30px;
     height: 30px;
 }
+.bar img:hover{
+    cursor: pointer;
+}
 button{
     background-color: black;
     color: white;
@@ -35,34 +38,36 @@ width: 300px;
 }
 
 @media only screen and (max-width: 600px){
-    body{
-        overflow-x: hidden !important;
-        background-color: #E5E5E5 !important;
-    }
  .bar{
     width: 20%;
-    margin-top: 250px;
+    margin-top: 90px;
+    height: 700px;
+        
  }   
  .card{
-    width: 60%;
+    width: 70%;
+    
  
 }
 .col{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin-left: 8rem;
 }
+
 .buckle {
     display: flex;
     width: 300px;
-    margin: 70px 0;
+    margin-left: 50px;
 
 }
+/* 
 .buckle button{
     width: 60%;
 }
 .cont{
     display: flex;
-}
+} */
 
 }
